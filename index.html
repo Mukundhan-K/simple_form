@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple sign_in page</title>
+
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        .confirm{
+            top: 20%;
+            left: 40%;
+        }
+
+       .form-control:focus{
+            /* box-shadow: 0 0 0 30px yellow !important; */
+       }
+    </style>
+
+</head>
+<body class="bg-secondary-subtle">
+    
+    <div class="container-fluid vh-100 ">
+        <div class="container vh-100">
+
+
+            <div class="row vh-100 align-items-center">
+
+                <form onsubmit="return validate()" action="./assets/page.html" 
+                          class="col-md-6 mx-auto bg-warning-subtle rounded-5 p-5 d-grid gap-3">
+                         
+                    <div>
+                        <input type="email" id="mail" class="form-control" onkeyup="maill()" placeholder="Email">
+                        <div class="invalid-feedback feedinp"> </div>
+                    </div>
+
+                    <div>
+                        <input type="text" id="name" class="form-control" onkeyup="namee()" placeholder="User Name">
+                        <div class="invalid-feedback feedinp"> </div>
+                    </div>
+
+
+                    <div>
+                        <input type="text" id="pass" class="form-control " onkeyup="passwrd()" placeholder="password">
+                        <div class="invalid-feedback"> </div>
+                    </div>
+
+                    <div>
+                        <input type="text" id="con_pass" class="form-control " onkeyup="cpasswrd()" placeholder="Confirm password">
+                        <div class="invalid-feedback"> </div>
+                    </div>
+
+
+
+                    <button  type="submit" class="btn btn-success rounded-pill w-50 mx-auto mt-4">submit</button>
+               
+                </form>
+
+            </div> 
+        </div>
+
+    </div>
+
+
+
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
+    <script src="./form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
